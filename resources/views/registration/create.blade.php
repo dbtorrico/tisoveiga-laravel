@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.nonav')
 
 @section('conteudo')
 <div class="main" style="margin-top: 100px;">

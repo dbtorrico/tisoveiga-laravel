@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('conteudo')
-  @include('includes.nav')
   <div class="container">
         <div class="main" style="margin-top: 100px;">
             <div class="row">
@@ -53,5 +52,4 @@
             </div>
         </div>
     </div>
-    @include('includes.footer')
 @endsection

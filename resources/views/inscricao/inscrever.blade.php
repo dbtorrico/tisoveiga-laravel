@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.nonav')
 @section('conteudo')
    <!-- /Forumlário -->
    @if(count($errors) > 0)
@@ -146,5 +146,4 @@
        </form>
      </div>
    </section>
-   @include('includes.footer')
 @endsection

@@ -1,6 +1,5 @@
  @extends('layouts.app')
  @section('conteudo')
-   @include('includes.nav')
   <section class="main">
       <div class="container tittle">
           <a href="../../index.php"><i class="fa fa-3x fa-arrow-left" aria-hidden="true"></i></a>
@@ -157,5 +156,4 @@
         </form>
       </div>
     </section>
-    @include('includes.footer')
 @endsection

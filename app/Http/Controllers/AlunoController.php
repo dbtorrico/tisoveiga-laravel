@@ -26,6 +26,8 @@ class AlunoController extends Controller
     {
         //
         $escola = false;
+        // echo $request->dNascimento;
+        // die();
         $this->validate($request, [
             'nome' => 'required',
             'dNascimento' => 'required',

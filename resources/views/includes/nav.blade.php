@@ -1,51 +1,55 @@
-<nav class="navbar topBar navbar-fixed-top">
-    <div class="container ">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Tiso <span class="blue">Veiga</span></a>
-            <img src="{{ asset('img/tribitiso.png') }}" style="width: 45px">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Tiso <span class="blue">Veiga</span></a>
+  <img src="{{ asset('img/tribitiso.png') }}" style="width: 45px">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown_alunos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Alunos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_alunos">
+          <a class="dropdown-item" href="{{ route('aluno.create') }}">Cadastrar</a>
+          <a class="dropdown-item" href="{{ route('aluno.index') }}">Consultar</a>
         </div>
-        <div class="collapse navbar-collapse " id="navbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Alunos <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="{{ route('aluno.index') }}">Consultar</a></li>
-                        <li><a href="{{ route('aluno.create') }}">Cadastrar</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Disciplina <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="{{ route('disciplina.index') }}">Consultar</a></li>
-                        <li><a href="{{ route('disciplina.create') }}">Cadastrar</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentos <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Arquivo Morto</a></li>
-                        <li><a href="#">Boletim</a></li>
-                        <li><a href="#">Declaração</a></li>
-                        <li><a href="#">Matrícula</a></li>
-                        <li><a href="#">Trancamento</a></li>
-                    </ul>
-                </li>
-                <li ><a href="">Instrumento</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Professor <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="">Consultar</a></li>
-                        <li><a href="">Cadastrar</a></li>
-                    </ul>
-                </li>
-                </li>
-                <li><a href="">Turmas<span class="sr-only">(current)</span></a></li>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown_disciplina" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Disciplina
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_disciplina">
+          <a class="dropdown-item" href="{{ route('disciplina.create') }}">Cadastrar</a>
+          <a class="dropdown-item" href="{{ route('disciplina.index') }}">Consultar</a>
         </div>
-    </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown_documentos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Documentos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_documentos">
+          <a class="dropdown-item" href="#">Arquivo Morto</a>
+          <a class="dropdown-item" href="#">Boletim</a>
+          <a class="dropdown-item" href="#">Declaração</a>
+          <a class="dropdown-item" href="#">Matrícula</a>
+          <a class="dropdown-item" href="#">Trancamento</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown_professores" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Professores
+       </a>
+       <div class="dropdown-menu" aria-labelledby="dropdown_professores">
+        <a class="dropdown-item" href="{{ route('professor.create') }}">Cadastrar</a>
+        <a class="dropdown-item" href="{{ route('professor.index') }}">Consultar</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Turma</a>
+    </li>
+  </ul>
+
+</div>
 </nav>

@@ -1,6 +1,7 @@
 body{
     background: url("../img/bg.png");/*
     padding-top: 80px; */
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
 }
 
 /*Login*/
@@ -150,7 +151,7 @@ nav.topBar a {
   text-shadow: -3px 4px 2px rgba(150, 150, 150, 1);
 }
 .navbar-brand{
-    font-family: 'Lobster', cursive !important;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-size: 2em;
 }
 
@@ -217,7 +218,8 @@ nav .active a {
 
 .main{
     margin-top: 5%;
-    font-family: Lobster;
+   /* font-family: Lobster;*/
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
 .main p{
@@ -230,7 +232,8 @@ nav .active a {
 
 .main h2{
     text-align: center;
-    font-family: Lobster;
+   /* font-family: Lobster;*/
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     color: #23527c;
 }
 
@@ -241,7 +244,8 @@ nav .active a {
 
 
 h1{
-  font-family: Lobster;
+  /*font-family: Lobster;*/
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size: 100px;
   color: #23527c;
 }

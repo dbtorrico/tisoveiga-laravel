@@ -1,6 +1,5 @@
  @extends('layouts.app')
  @section('conteudo')
-    @include('includes.nav')
     <!-- /Forumlário -->
     @if(count($errors) > 0)
         <ul class="list-group">
@@ -160,5 +159,4 @@
         </form>
       </div>
     </section>
-    @include('includes.footer')
 @endsection
