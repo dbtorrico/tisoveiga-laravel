@@ -1,0 +1,412 @@
+body{
+    background: url("../img/bg.png");/*
+    padding-top: 80px; */
+}
+
+/*Login*/
+.card-container.card {
+    max-width: 350px;
+    font-family: 'Fjalla One';
+}
+
+.font{
+  font-family: 'Fjalla One';
+  font-size: 17px;
+}
+
+.logo {
+    margin-left: 10%;
+    display: block;
+}
+
+.btn {
+    font-weight: 700 ;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+
+}
+
+.card {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 10%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 10px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+    padding: 15px;
+    font-family: 'Fjalla One';
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #23527C;
+    border-radius: 3px;
+}
+
+.form-signin .form-control:focus {
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    background-color: #29A2D9;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 4px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: #23527C;
+    color: white;
+}
+/*!login*/
+
+/* estilização titulo da pagina */
+.tittle {
+  margin-top: 2em;
+  display: block;
+}
+.tittle a{
+  padding-top: 20px;
+  float:left;
+  color:#333;
+}
+.tittle a:hover{
+  -webkit-column-rule: #23527C;
+  -moz-column-rule: #23527C;
+  -o-column-rule: #23527C;
+  column-rule: #23527C;
+}
+.tittle h1{
+  float: right;
+  font-size: 3em;
+  text-shadow: -3px 4px 2px rgba(150, 150, 150, 1);
+  color:#333;
+}
+/* Menu navbar */
+nav.topBar {
+  background: #29a2d9;
+  padding: 10px 0px;
+}
+
+nav.topBar a {
+  color: #fff;
+  font-weight: normal;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  text-shadow: -3px 4px 2px rgba(150, 150, 150, 1);
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive !important;
+    font-size: 2em;
+}
+
+nav.topBar ul.navbar-nav a {
+  color: #fff;
+  border-width: 1px;
+  border-color: #5ec8e5;
+}
+
+nav.topBar ul.navbar-nav a:hover, nav.topBar ul.navbar-nav a:visited, nav.topBar ul.navbar-nav a:focus, nav.topBar ul.navbar-nav a:active {
+  font-weight: bold;
+  background: #29a2d9;
+}
+
+nav.topBar button.navbar-toggle {
+  background: none;
+  border: 1px solid #1348d8;
+  border-radius: 2px;
+}
+
+nav.topBar button.navbar-toggle>span.icon-bar {
+  background: #1348d8;
+}
+/* dropdown box */
+nav.topBar ul.dropdown-menu {
+  border: 0;
+  margin: 0px 0;
+  background: #29a2d9;
+}
+/*Cor da letra*/
+nav.topBar ul.dropdown-menu>li>a {
+  color: #fff;
+}
+/*Cor do background Dropdown on hover*/
+nav.topBar ul.dropdown-menu>li>a:hover {
+  background: #29a2d9;
+  color: #fff;
+}
+
+nav.topBar {
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 3t4px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav .active a {
+  color: #1348d8 !important;
+  font-size: 1.7em;
+  font-weight: bold;
+
+}
+.blue {
+  color: #23527C;
+}
+/* /Menu navbar */
+
+
+/* Box principal */
+.topico{
+  padding-left: 5%;
+}
+
+
+.main{
+    margin-top: 5%;
+    font-family: Lobster;
+}
+
+.main p{
+    color: #5b8465;
+}
+
+.main img{
+    padding: 20%;
+}
+
+.main h2{
+    text-align: center;
+    font-family: Lobster;
+    color: #23527c;
+}
+
+.alinhar{
+  font-size: 18px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+h1{
+  font-family: Lobster;
+  font-size: 100px;
+  color: #23527c;
+}
+
+/* /Box principal */
+
+/* Estilização Footer */
+
+hr.style18 {
+  margin-top: 30px;
+  height: 30px;
+  border-style: double;
+  border-color: #23527C;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 60%;
+  opacity: 50%;
+}
+
+hr.style18:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #23527C;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.footer p{
+    text-align: center;
+    margin-top: -1.8%;
+    color: #23527C;
+}
+
+.footer img{
+    width: 1%;
+    height: 1%;
+}
+
+/* /Estilização Footer*/
+
+
+/* Estilização da barra de rolagem */
+pre::-webkit-scrollbar {
+  width: .875em;
+  height: .875em;
+  background: #bfb6a3 0 0 repeat;
+}
+pre::-webkit-scrollbar-track-piece {
+  background: transparent none;
+  border: solid .25em transparent;
+  border-right-width: .5em;
+  margin: .25em;
+  -webkit-box-shadow: inset .0625em .0625em 0 0 rgb(137,131,117), inset -.0625em -.0625em 0 0 rgb(224,220,210);
+}
+pre::-webkit-scrollbar-track-piece:horizontal {
+  border-right-width: .25em;
+  border-bottom-width: .5em;
+}
+pre::-webkit-scrollbar-thumb {
+  border: solid 0 transparent;
+  border-right-width: .25em;
+  -webkit-border-radius: .3125em;
+  -webkit-border-top-right-radius: .5625em .3125em;
+  -webkit-border-bottom-right-radius: .5625em .3125em;
+  /* -webkit-box-shadow: inset 0 0 0 .0625em rgb(79,79,79), inset 0 0 0 .375em rgb(102,102,102); */
+  -webkit-box-shadow: inset 0 0 0 0.0625em rgb(149, 149, 149), inset 0 0 0 0.375em rgb(177, 177, 177);
+
+}
+pre::-webkit-scrollbar-thumb:hover {
+  -webkit-box-shadow: inset 0 0 0 .0625em rgb(90,90,90), inset 0 0 0 .375em rgb(110,110,110);
+}
+pre::-webkit-scrollbar-thumb:horizontal {
+  border-right-width: 0;
+  border-bottom-width: .25em;
+  -webkit-border-top-right-radius: .3125em;
+  -webkit-border-bottom-right-radius: .3125em .5625em;
+  -webkit-border-bottom-left-radius: .3125em .5625em;
+}
+pre::-webkit-scrollbar-corner {
+  background: rgba(255, 255, 255, 0);
+}
+body ::-webkit-scrollbar {
+  background: transparent none;
+}
+
+/* Estilização do cabeçalho da tabela*/
+.main td,th{
+    text-align: center;
+}
+
+.formInput{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.formInput input{
+    width: 100%;
+    margin: 15px;
+    border: 1px solid #29a2d9;
+    border-radius: 5px;
+    padding: 7px 20px;
+ }
+ .formInput button{
+    border: none;
+    background: none;
+    color: #333;
+    padding: 0 10px;
+ }
+ .formInput a{
+    padding: 0 10px;
+    color: #333;
+ }
+.formInput button:hover{
+    font-size:1.1em;
+    color: #23527C;
+ }
+ .formInput a:hover{
+    font-size:1.1em;
+    color: #23527C;
+ }
+
+
+.tableHeader{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+pre{
+    background-color: rgba(245, 245, 245, 0.79);
+    border: 1px solid #29a2d9;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    white-space: nowrap !important;
+    height: 60vh;
+
+ }
+
+table th{
+  border-bottom: 1px solid #29a2d9;
+  padding: 3px 6px;
+  white-space: nowrap !important;
+}
+
+table td{
+  border-bottom: 1px solid #29a2d9;
+  padding: 3px 6px;
+  white-space: nowrap !important;
+}
+table td a{
+  color: #333;
+}
+table tr{
+background: #ddd;
+}
+table tr:nth-child(odd){
+background: none;
+}
+
+@media (min-width: 1024px){
+    .tabela{
+    }
+}
+/* /Estilização do cabeçalho da tabela*/
