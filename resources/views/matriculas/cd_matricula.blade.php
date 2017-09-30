@@ -21,18 +21,18 @@
               <div class="form-group">
                   <label class="control-label col-sm-2" for="nome">Data de Matrícula:</label>
                   <div class="col-sm-10">
-                      <input type="text" class="form-control" name="nome" placeholder="Nome da Disciplina" value="{{ Carbon\Carbon::now()->day }}/{{ Carbon\Carbon::now()->month }}/{{ Carbon\Carbon::now()->year }}">
+                      <input type="text" class="form-control" name="data_matricula" value="{{ Carbon\Carbon::now()->day }}/{{ Carbon\Carbon::now()->month }}/{{ Carbon\Carbon::now()->year }}">
                   </div>
               </div>
               <div class="form-group">
-                  <label class="control-label col-sm-2">Turmas</turmas>
-                    @if($turmas->count() > 0)
-                      @foreach($turmas as $turma)
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="turmas[]" value="{{ $turma->id }}"> {{ $turma->professor->nome}} - {{ $turma->professor->leciona}} - {{ $turma->turno }} </label>
-                        </div>
-                      @endforeach
-                    @endif
+                <label class="control-label col-sm-2" for="nome">Turmas:</label>
+                <div class="col-sm-10">
+                  @if($turmas->count() > 0)
+                    @foreach($turmas as $turma)
+                        <label><input type="checkbox" name="turmas[]" value="{{ $turma->id }}"> {{ $turma->professor->nome }} - {{ $turma->professor->leciona}} - {{ $turma->turno}}</label><br>
+                    @endforeach
+                  @endif
+                </div>
               </div>
               <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
