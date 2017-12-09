@@ -1,5 +1,12 @@
+
+
+
 @extends('layouts.app')
 @section('conteudo')
+<div class="container">
+    <h1>Página inicial - navegue pelo menu acima</h1>
+    </div>
+{{-- 
   <div class="container">
         <div class="main" style="margin-top: 100px;">
             <div class="row">
@@ -51,5 +58,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

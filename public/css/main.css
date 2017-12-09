@@ -1,19 +1,22 @@
 body{
-    background: url("../img/bg.png");/*
+    /*background: url("../img/bg.png");/**/
     padding-top: 80px; */
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
 }
 
+button{
+  cursor: pointer !important;
+}
 /*Login*/
 .card-container.card {
     max-width: 350px;
     font-family: 'Fjalla One';
 }
 
-.font{
+/*.font{
   font-family: 'Fjalla One';
   font-size: 17px;
-}
+}*/
 
 .logo {
     margin-left: 10%;
@@ -116,7 +119,7 @@ body{
 /*!login*/
 
 /* estilização titulo da pagina */
-.tittle {
+/*.tittle {
   margin-top: 2em;
   display: block;
 }
@@ -136,7 +139,7 @@ body{
   font-size: 3em;
   text-shadow: -3px 4px 2px rgba(150, 150, 150, 1);
   color:#333;
-}
+}*/
 /* Menu navbar */
 nav.topBar {
   background: #29a2d9;
@@ -217,7 +220,7 @@ nav .active a {
 
 
 .main{
-    margin-top: 5%;
+    /*margin-top: 5%;*/
    /* font-family: Lobster;*/
    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }

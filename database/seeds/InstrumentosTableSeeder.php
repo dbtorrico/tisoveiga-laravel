@@ -20,6 +20,6 @@ class InstrumentosTableSeeder extends Seeder
         ]);
         DB::table('instrumentos')->insert([
             'nome' => 'Saxofone'
-        ]);/
+        ]);
     }
 }

@@ -23,7 +23,6 @@ class SessionsController extends Controller
 		//aqui eh feita a autenticacao do usuario
 		if(! auth()->attempt(request(['email', 'password'])))
 		{
-
 			return back()->withErrors([
 				'message' => 'Login falhou. Favor confirmar seus dados e tentar novamente.'
 				]);
