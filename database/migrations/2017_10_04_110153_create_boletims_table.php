@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMatriculasTable extends Migration
+class CreateBoletimsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateMatriculasTable extends Migration
      */
     public function up()
     {
-        Schema::create('matriculas', function (Blueprint $table) {
+        Schema::create('boletims', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('aluno_id');
-            $table->string('data_matricula');
-            $table->integer('instrumento_id');
+            $table->integer('matricula_id');
             $table->integer('periodo');
+            $table->integer('faltas');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateMatriculasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('matriculas');
+        Schema::dropIfExists('boletims');
     }
 }

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Turma;
 use App\Professor;
+use App\Matricula;
+use App\Aluno;
 
 class TurmaController extends Controller
 {
@@ -41,6 +43,9 @@ class TurmaController extends Controller
     public function show($id)
     {
         //
+        $turma = Turma::find($id);
+        $matriculas = $turma->matriculas()->get();
+        return view('turmas.sw_turma')->with('matriculas', $matriculas);
     }
 
     public function edit($id)

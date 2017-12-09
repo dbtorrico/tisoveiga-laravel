@@ -13,7 +13,11 @@ class Matricula extends Model
         return $this->belongsToMany('App\Turma');
     }
 
-    public function alunos(){
-        return $this->belongsTo('App\Aluno', 'aluno_id');
+    public function aluno(){
+        return $this->belongsTo('App\Aluno');
+    }
+
+    public function boletim(){
+        return $this->hasOne('App\Boletim');
     }
 }

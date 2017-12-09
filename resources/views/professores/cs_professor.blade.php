@@ -20,6 +20,7 @@
                               <th>Update</th>
                               <th>Nome</th>
                               <th>E-Mail</th>
+                              <th>Leciona</th>
                               <th>Telefone</th>
                           </tr>
 
@@ -33,6 +34,7 @@
                                   </td>
                                   <td>{{ $professor->nome }}</td>
                                   <td>{{ $professor->email }}</td>
+                                  <td>{{ $professor->leciona }}</td>
                                   <td>{{ $professor->telefone }}</td>
                               </tr>
                             @endforeach

@@ -54,7 +54,6 @@ Route::get('/dt_aluno/{id}', [
   'uses' => 'AlunoController@destroy',
   'as' => 'aluno.delete'
 ]);
-
 //--------------------------------------------------------------------------
 
 //Rotas para disciplinas ---------------------------------------------------
@@ -198,6 +197,10 @@ Route::get('dt_turma/{id}', [
   'uses' => 'TurmaController@destroy',
   'as' => 'turma.delete'
 ]);
+Route::get('sw_turma/{id}', [
+  'uses' => 'TurmaController@show',
+  'as' => 'turma.show'
+]);
 //-------------------------------------------------------
 //Rotas para matrículas
 Route::get('cd_matricula/{id}', [
@@ -226,4 +229,13 @@ Route::get('/logout', [
   'uses'=>'SessionsController@destroy',
   'as' => 'login.destroy'
   ]);
-
+//--------------------------------------------------------------------------
+//Rotas para notas
+Route::get('cd_nota/{id}', [
+  'uses' => 'NotasController@create',
+  'as' => 'nota.create'
+]);
+Route::post('st_nota', [
+  'uses' => 'NotasController@store',
+  'as' => 'nota.store'
+]);
