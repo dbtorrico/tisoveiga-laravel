@@ -7,6 +7,11 @@ body{
 button{
   cursor: pointer !important;
 }
+
+/*Pagina Inicial*/
+.pagina-inicial h1{
+  text-align: center;
+}
 /*Login*/
 .card-container.card {
     max-width: 350px;

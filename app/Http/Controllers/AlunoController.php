@@ -124,7 +124,6 @@ class AlunoController extends Controller
         if($request->escola_publica == "sim"){
             $escola = true;
         }
-
         $aluno->nome = $request->nome;
         $aluno->data_nascimento = $request->dNascimento;
         $aluno->idade = $request->idade;

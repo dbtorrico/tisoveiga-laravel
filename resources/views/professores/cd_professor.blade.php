@@ -57,7 +57,6 @@
             <div class="form-group font">
               <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-primary" name="envio">Cadastrar</button>
-                <button type="submit" class="btn btn-default"><a href="./">Cancelar</button></a>
               </div>
             </div>
           </form>

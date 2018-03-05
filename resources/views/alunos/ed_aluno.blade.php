@@ -2,8 +2,7 @@
  @section('conteudo')
   <section class="main">
       <div class="container tittle">
-          <a href="../../index.php"><i class="fa fa-3x fa-arrow-left" aria-hidden="true"></i></a>
-          <h1>Editar Aluno</h1>
+          <h3>Editar Aluno</h3>
       </div>
       <div class="container center">
         <form class="form-horizontal" method="POST" action="{{ route('aluno.update', ['id' => $aluno->id]) }}">
@@ -17,7 +16,7 @@
           <div class="form-group font">
             <label class="control-label col-sm-2" for="dNascimento">Data nascimento:</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" value="{{$aluno->data_nascimento}}" name="dNascimento">
+              <input type="text" class="form-control" value="{{$aluno->data_nascimento}}" name="dNascimento">
             </div>
           </div>
           <div class="form-group font">
@@ -149,7 +148,7 @@
           </div>
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" name="edicao" class="btn btn-default">Confirmar Edição</button>
+              <button type="submit" name="edicao" class="btn btn-primary">Confirmar Edição</button>
               <button type="submit" class="btn btn-default"><a href="{{ route('aluno.index') }}">Cancelar</button></a>
             </div>
           </div>

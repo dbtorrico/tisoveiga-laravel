@@ -3,8 +3,7 @@
   <section class="main">
       <div class="container center">
         <div class="container tittle">
-            <a href="./"><i class="fa fa-3x fa-arrow-left" aria-hidden="true"></i></a>
-            <h1>Editar Professor</h1>
+            <h3>Editar Professor</h3>
         </div>
           <form class="form-horizontal font" method="POST" action="{{ route('professor.update' , ["id" => $professor->id]) }}">
             {{ csrf_field() }}
@@ -28,8 +27,8 @@
             </div>
             <div class="form-group font">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" name="envio">Confirmar</button>
-                <button type="submit" class="btn btn-default"><a href="./">Cancelar</button></a>
+                <button type="submit" class="btn btn-primary" name="envio">Confirmar Edição</button>
+                <button type="submit" class="btn btn-default"><a href="{{ route('professor.index') }}">Cancelar</button></a>
               </div>
             </div>
           </form>

@@ -3,7 +3,7 @@
 
 @extends('layouts.app')
 @section('conteudo')
-<div class="container">
+<div class="pagina-inicial container">
     <h1>Página inicial - navegue pelo menu acima</h1>
     </div>
 {{-- 

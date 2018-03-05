@@ -4,7 +4,7 @@
 <section class="main">
     <div class="container">
         <div class="container tittle">
-            <h1 >Consulta de Aluno</h1>
+            <h3>Consulta de Aluno</h3>
         </div>
         <table id="example" class="display" width="100%" cellspacing="0">
             <thead>

@@ -3,7 +3,7 @@
 <section class="main">
   <div class="container center">
     <div class="container tittle">
-      <h1>Consulta de Professor</h1>
+      <h3>Consulta de Professor</h3>
     </div>
     <table id="example" class="display" width="100%" cellspacing="0">
       <thead>
@@ -34,7 +34,6 @@
           <td>{{ $professor->telefone }}</td>
           <td><a href="{{ route('professor.edit', ['id' => $professor->id]) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
             <a href="{{ route('professor.delete', ['id' => $professor->id]) }}" onClick="return confirm('Tem certeza que deseja deletar ?')"><i class="fa fa-user-times" aria-hidden="true"></i></a>
-            <a href="{{ route('matricula.create', ['id' => $professor->id]) }}"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
           </td>
         </tr>
         @endforeach

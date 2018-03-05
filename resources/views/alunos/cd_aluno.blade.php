@@ -28,7 +28,7 @@
           <div class="form-group font">
             <label class="control-label col-sm-2  col-md-12" for="dNascimento">Data nascimento:</label>
             <div class="col-sm-10  col-md-12">
-              <input type="date" class="form-control" name="dNascimento">
+              <input type="text" class="form-control" name="dNascimento">
             </div>
           </div>
           <div class="form-group font">

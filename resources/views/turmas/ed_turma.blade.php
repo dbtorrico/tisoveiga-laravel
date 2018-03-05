@@ -4,8 +4,7 @@
   <section class="main">
     <div class="container center">
         <div class="container tittle">
-            <a href="./"><i class="fa fa-3x fa-arrow-left" aria-hidden="true"></i></a>
-            <h1>Editar Turma</h1>
+            <h3>Editar Turma</h3>
         </div>
         <form class="form-horizontal" method="POST" action="{{ route('turma.update', ["id" => $turma->id]) }}">
             {{ csrf_field() }}
@@ -64,7 +63,7 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default" name="envio">Confirmar Edição</button>
+                    <button type="submit" class="btn btn-primary" name="envio">Confirmar Edição</button>
                     <button type="submit" class="btn btn-default"><a href="./">Cancelar</button></a>
                 </div>
             </div>

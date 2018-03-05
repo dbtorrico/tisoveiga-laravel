@@ -4,7 +4,7 @@
     <div class="container center">
       <div class="container tittle">
           <a href="./"><i class="fa fa-3x fa-arrow-left" aria-hidden="true"></i></a>
-          <h1>Consulta de Instrumento</h1>
+          <h3>Consulta de Instrumento</h3>
       </div>
           <pre>
               <table width="100%">
