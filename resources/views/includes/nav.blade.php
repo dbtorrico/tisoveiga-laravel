@@ -17,7 +17,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="dropdown_disciplina" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown_disciplina" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Disciplina
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdown_disciplina">
@@ -48,16 +48,37 @@
       </div>
     </li>
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown_turma" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Turma
-       </a>
-       <div class="dropdown-menu" aria-labelledby="dropdown_turma">
-        <a class="dropdown-item" href="{{ route('turma.create') }}">Cadastrar</a>
-        <a class="dropdown-item" href="{{ route('turma.index') }}">Consultar</a>
-      </div>
+      <a class="nav-link dropdown-toggle" href="#" id="dropdown_turma" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Turma
+     </a>
+     <div class="dropdown-menu" aria-labelledby="dropdown_turma">
+      <a class="dropdown-item" href="{{ route('turma.create') }}">Cadastrar</a>
+      <a class="dropdown-item" href="{{ route('turma.index') }}">Consultar</a>
+    </div>
+  </li>
+
+</ul>
+
+<!-- Right Side Of Navbar -->
+<ul class="navbar-nav navbar-right">
+      <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+        {{ Auth::user()->name }} <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu" role="menu">
+          <li>
+            <a class="nav-link" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+            Logout
+          </a>
+
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+          </form>
+        </li>
+      </ul>
     </li>
-
   </ul>
-
 </div>
 </nav>

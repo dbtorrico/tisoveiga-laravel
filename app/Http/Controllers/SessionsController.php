@@ -27,7 +27,7 @@ class SessionsController extends Controller
 				'message' => 'Login falhou. Favor confirmar seus dados e tentar novamente.'
 				]);
 		}
-
+		
 		//redireciona para a homepage
 		return redirect()->home();
 	}

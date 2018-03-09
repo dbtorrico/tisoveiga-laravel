@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -212,8 +212,8 @@ Route::post('st_matricula', [
   'as' => 'matricula.store'
 ]);
 //controladores de autenticacao
-Route::get('/register', 'RegistrationController@create');
-Route::post('/register', 'RegistrationController@store');
+// Route::get('/register', 'RegistrationController@create');
+// Route::post('/register', 'RegistrationController@store');
 
 Route::get('/login', [
   'uses' => 'SessionsController@create',
@@ -228,6 +228,10 @@ Route::post('/login', [
 Route::get('/logout', [
   'uses'=>'SessionsController@destroy',
   'as' => 'login.destroy'
+  ]);
+Route::post('/logout', [
+  'uses'=>'SessionsController@destroy',
+  'as' => 'logout'
   ]);
 //--------------------------------------------------------------------------
 //Rotas para notas

@@ -5,7 +5,6 @@
 <section class="main">
           <div class="container">
               <div class="card card-container">
-                  <img class="logo" src="{{ asset('img/tribitiso.ico') }}"/>
                   <form class="form-signin" method="POST" action="/login">
                   	{{ csrf_field() }}
                       
