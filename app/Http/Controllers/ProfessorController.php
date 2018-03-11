@@ -39,7 +39,7 @@ class ProfessorController extends Controller
             'telefone' => $request->telefone
         ]);
 
-        return redirect()->back();
+        return redirect()->back()->with('success','Professor "'.$request->nome.'" cadastrado com sucesso!');;
     }
 
     public function show($id)

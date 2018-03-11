@@ -32,7 +32,7 @@ class DisciplinaController extends Controller
             'nome' => $request->nome
         ]);
 
-        return redirect()->back();
+        return redirect()->back()->with('success','Disciplina "'.$request->nome.'" cadastrada com sucesso!');;
     }
 
     public function show($id)

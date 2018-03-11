@@ -25,6 +25,12 @@
                 <input type="tel" class="form-control" name="telefone" placeholder="Telefone" value="{{ $professor->telefone }}">
               </div>
             </div>
+             <div class="form-group font">
+              <label class="control-label col-sm-2" for="leciona">Leciona:</label>
+              <div class="col-sm-10">
+                <input type="tel" class="form-control" name="leciona" placeholder="Leciona" value="{{ $professor->leciona }}">
+              </div>
+            </div>
             <div class="form-group font">
               <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-primary" name="envio">Confirmar Edição</button>

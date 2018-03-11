@@ -29,5 +29,5 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
 
-    <title>Tiso Veiga</title>
+    <title>Conservatório Alfenas</title>
   </head>

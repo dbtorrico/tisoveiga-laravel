@@ -35,8 +35,8 @@ class TurmaController extends Controller
             'professors_id' => $request->professor,
             'turno' => $request->turno
         ]);
-
-        return redirect()->back();
+        $professor = Professor::find($request->professor);
+        return redirect()->back()->with('success','Turma Prof: "'.$professor->nome.'", Turno: "'.$request->turno.'", cadastrada com sucesso!');;
 
     }
 

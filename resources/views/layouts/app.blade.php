@@ -2,16 +2,15 @@
 <html lang="en">
 @include('includes.header')
 @include('includes.nav') {{-- menu --}}
-
-
-
 <body>
- <!-- Navbar -->
+	<!-- Navbar -->
+	<div class="container">
+		@include('includes.messages')
+	</div>
+	@yield('conteudo')
+	
+	
 
- @yield('conteudo')
- 
- 
-
- @include('includes.footer')
+	@include('includes.footer')
 </body>
 </html>

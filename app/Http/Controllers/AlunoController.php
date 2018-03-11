@@ -26,8 +26,7 @@ class AlunoController extends Controller
     {
         //
         $escola = false;
-        // echo $request->dNascimento;
-        // die();
+
         $this->validate($request, [
             'nome' => 'required',
             'dNascimento' => 'required',
@@ -77,8 +76,7 @@ class AlunoController extends Controller
           'telefone' => $request->telefone
         ]);
 
-        return redirect()->back();
-
+        return redirect()->back()->with('success','Aluno "'.$request->nome.'" cadastrado com sucesso!');
     }
 
     public function show($id)

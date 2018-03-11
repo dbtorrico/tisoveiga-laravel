@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('conteudo')
+@include('includes.errors') 
 
   <section class="main">
     <div class="container center">
