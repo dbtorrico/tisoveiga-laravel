@@ -149,7 +149,6 @@
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" name="edicao" class="btn btn-primary">Confirmar Edição</button>
-              <button type="submit" class="btn btn-default"><a href="{{ route('aluno.index') }}">Cancelar</button></a>
             </div>
           </div>
         </form>

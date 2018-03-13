@@ -10,7 +10,6 @@
         <tr>
           <th>Nome</th>
           <th>Email</th>
-          <th>Disciplinas</th>
           <th>Telefone</th>
           <th>Opções</th>
         </tr>
@@ -19,7 +18,6 @@
         <tr>
           <th>Nome</th>
           <th>Email</th>
-          <th>Disciplinas</th>
           <th>Telefone</th>
           <th>Opções</th>
         </tr>
@@ -30,7 +28,8 @@
         <tr>
           <td>{{ $professor->nome }}</td>
           <td>{{ $professor->email }}</td>
-          <td>{{ $professor->leciona }}</td>
+          {{-- {{dd($professor->disciplinas)}} --}}
+          {{-- <td>{{ $professor->disciplinas->nome }}</td> --}}
           <td>{{ $professor->telefone }}</td>
           <td><a href="{{ route('professor.edit', ['id' => $professor->id]) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
             <a href="{{ route('professor.delete', ['id' => $professor->id]) }}" onClick="return confirm('Tem certeza que deseja deletar ?')"><i class="fa fa-user-times" aria-hidden="true"></i></a>

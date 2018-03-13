@@ -32,7 +32,7 @@ class InstrumentoController extends Controller
             'nome' => $request->nome
         ]);
 
-        return redirect()->back();
+        return redirect()->back()->with('success','Instrumento "'.$request->nome.'" cadastrado com sucesso!');
     }
 
     public function show($id)
@@ -59,7 +59,7 @@ class InstrumentoController extends Controller
 
         $instrumento->save();
 
-        return redirect()->route('instrumento.index');
+        return redirect()->route('instrumento.index')->with('success','Instrumento "'.$request->nome.'" editado com sucesso!');
     }
 
     public function destroy($id)

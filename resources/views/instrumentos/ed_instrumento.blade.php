@@ -3,7 +3,6 @@
   <section class="main">
             <div class="container center">
               <div class="container tittle">
-                  <a href="./"><i class="fa fa-3x fa-arrow-left" aria-hidden="true"></i></a>
                   <h1>Instrumento</h1>
               </div>
               <form class="form-horizontal font" method="POST" action="{{ route('instrumento.update' , ["id" => $instrumento->id]) }}">
@@ -16,8 +15,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" name="envio" class="btn btn-default">Confirmar</button>
-                    <button type="submit" class="btn btn-default"><a href="./">Cancelar</button></a>
+                    <button type="submit" name="envio" class="btn btn-primary">Confirmar</button>
                   </div>
                 </div>
               </form>

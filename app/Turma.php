@@ -13,7 +13,7 @@ class Turma extends Model
         return $this->belongsTo('App\Professor', 'professors_id');
     }
 
-    public function matriculas(){
-        return $this->belongsToMany('App\Matricula');
+    public function disciplina(){
+        return $this->belongsTo('App\Disciplina');
     }
 }

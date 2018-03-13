@@ -16,6 +16,12 @@ class CreateDisciplinasTable extends Migration
         Schema::create('disciplinas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
+            $table->unsignedInteger('instrumento_id')->nullable();
+            //Disciplina possui 0 ou 1 instrumento.
+            $table->foreign('instrumento_id')->references('id')->on('instrumentos')->onDelete('set null');
+            $table->unsignedInteger('professor_id')->nullable();
+            //Disciplina possui 1 ou mais professores.
+            $table->foreign('professor_id')->references('id')->on('professors')->onDelete('cascade');
             $table->timestamps();
         });
     }

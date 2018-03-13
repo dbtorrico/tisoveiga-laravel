@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Professor;
-use App\Instrumento;
+use App\Disciplina;
 
 class ProfessorController extends Controller
 {
@@ -19,7 +19,7 @@ class ProfessorController extends Controller
     public function create()
     {
         //
-        return view('professores.cd_professor')->with('instrumentos', Instrumento::all());
+        return view('professores.cd_professor')->with('disciplinas', Disciplina::all());
     }
 
     public function store(Request $request)
@@ -28,18 +28,16 @@ class ProfessorController extends Controller
         $this->validate($request, [
             'nome' => 'required',
             'email' => 'required',
-            'leciona' => 'required',
             'telefone' => 'required'
         ]);
-
+        
         $professor = Professor::create([
             'nome' => $request->nome,
             'email' => $request->email,
-            'leciona' => $request->leciona,
             'telefone' => $request->telefone
         ]);
 
-        return redirect()->back()->with('success','Professor "'.$request->nome.'" cadastrado com sucesso!');;
+        return redirect()->back()->with('success','Professor "'.$request->nome.'" cadastrado com sucesso!');
     }
 
     public function show($id)
@@ -72,7 +70,7 @@ class ProfessorController extends Controller
 
         $professor->save();
 
-        return redirect()->route('professor.index');
+        return redirect()->route('professor.index')->with('success','Professor "'.$request->nome.'" editado com sucesso!');;
     }
 
     public function destroy($id)
@@ -85,13 +83,13 @@ class ProfessorController extends Controller
         return redirect()->back();
     }
 
-    public function search(Request $request){
+    // public function search(Request $request){
 
-        $professores = DB::table('professors')
-        ->where('nome', 'like', '%'.$request->nome.'%')
-        ->get();
+    //     $professores = DB::table('professors')
+    //     ->where('nome', 'like', '%'.$request->nome.'%')
+    //     ->get();
 
-        return view('professores.cs_professor')->with('professores', $professores);
+    //     return view('professores.cs_professor')->with('professores', $professores);
 
-    }
+    // }
 }

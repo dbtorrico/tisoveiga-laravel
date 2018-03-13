@@ -70,7 +70,7 @@ class TurmaController extends Controller
 
         $turma->save();
 
-        return redirect()->route('turma.index');
+        return redirect()->route('turma.index')->with('success','Turma "'.$request->nome.'" editada com sucesso!');;
     }
 
     public function destroy($id)

@@ -16,15 +16,33 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown_disciplina" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Disciplina
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdown_disciplina">
-          <a class="dropdown-item" href="{{ route('disciplina.create') }}">Cadastrar</a>
-          <a class="dropdown-item" href="{{ route('disciplina.index') }}">Consultar</a>
-        </div>
-      </li>
-      {{-- DOCUMENTOS --}}
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown_professores" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Professores
+       </a>
+       <div class="dropdown-menu" aria-labelledby="dropdown_professores">
+        <a class="dropdown-item" href="{{ route('professor.create') }}">Cadastrar</a>
+        <a class="dropdown-item" href="{{ route('professor.index') }}">Consultar</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="dropdown_instrumentos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Instrumentos
+     </a>
+     <div class="dropdown-menu" aria-labelledby="dropdown_instrumentos">
+      <a class="dropdown-item" href="{{ route('instrumento.create') }}">Cadastrar</a>
+      <a class="dropdown-item" href="{{ route('instrumento.index') }}">Consultar</a>
+    </div>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="dropdown_disciplina" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Disciplina
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdown_disciplina">
+      <a class="dropdown-item" href="{{ route('disciplina.create') }}">Cadastrar</a>
+      <a class="dropdown-item" href="{{ route('disciplina.index') }}">Consultar</a>
+    </div>
+  </li>
+  {{-- DOCUMENTOS --}}
       {{-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown_documentos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Documentos
@@ -37,47 +55,40 @@
           <a class="dropdown-item" href="#">Trancamento</a>
         </div>
       </li> --}}
+      
+      
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown_professores" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Professores
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown_turma" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Turma
        </a>
-       <div class="dropdown-menu" aria-labelledby="dropdown_professores">
-        <a class="dropdown-item" href="{{ route('professor.create') }}">Cadastrar</a>
-        <a class="dropdown-item" href="{{ route('professor.index') }}">Consultar</a>
+       <div class="dropdown-menu" aria-labelledby="dropdown_turma">
+        <a class="dropdown-item" href="{{ route('turma.create') }}">Cadastrar</a>
+        <a class="dropdown-item" href="{{ route('turma.index') }}">Consultar</a>
       </div>
     </li>
+
+  </ul>
+
+  <!-- Right Side Of Navbar -->
+  <ul class="navbar-nav navbar-right">
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="dropdown_turma" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       Turma
-     </a>
-     <div class="dropdown-menu" aria-labelledby="dropdown_turma">
-      <a class="dropdown-item" href="{{ route('turma.create') }}">Cadastrar</a>
-      <a class="dropdown-item" href="{{ route('turma.index') }}">Consultar</a>
-    </div>
-  </li>
-
-</ul>
-
-<!-- Right Side Of Navbar -->
-<ul class="navbar-nav navbar-right">
-      <li class="nav-item dropdown">
       <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
         {{ Auth::user()->name }} <span class="caret"></span>
       </a>
       <ul class="dropdown-menu" role="menu">
-          <li>
-            <a class="nav-link" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">
-            Logout
-          </a>
+        <li>
+          <a class="nav-link" href="{{ route('logout') }}"
+          onclick="event.preventDefault();
+          document.getElementById('logout-form').submit();">
+          Logout
+        </a>
 
-          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            {{ csrf_field() }}
-          </form>
-        </li>
-      </ul>
-    </li>
-  </ul>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+          {{ csrf_field() }}
+        </form>
+      </li>
+    </ul>
+  </li>
+</ul>
 </div>
 </nav>

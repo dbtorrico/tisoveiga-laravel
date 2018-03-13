@@ -9,12 +9,16 @@
       <thead>
         <tr>
           <th>Nome</th>
+          <th>Instrumento</th>
+          <th>Professor</th>
           <th>Opções</th>
         </tr>
       </thead>
       <tfoot>
         <tr>
           <th>Nome</th>
+          <th>Instrumento</th>
+          <th>Professor</th>
           <th>Opções</th>
         </tr>
       </tfoot>
@@ -23,6 +27,17 @@
         @foreach($disciplinas as $disciplina)
         <tr>
           <td>{{ $disciplina->nome }}</td>
+          @if($disciplina->instrumento)
+          <td>{{ $disciplina->instrumento->nome }}</td>
+          @else
+          <td> - </td>
+          @endif
+          @if($disciplina->professor)
+          <td>{{ $disciplina->professor->nome }}</td>
+          @else
+          <td> - </td>
+          @endif
+          
           <td><a href="{{ route('disciplina.edit', ['id' => $disciplina->id]) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
             <a href="{{ route('disciplina.delete', ['id' => $disciplina->id]) }}" onClick="return confirm('Tem certeza que deseja deletar ?')"><i class="fa fa-user-times" aria-hidden="true"></i></a>
           </td>

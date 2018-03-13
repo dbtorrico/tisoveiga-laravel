@@ -145,7 +145,7 @@ class AlunoController extends Controller
 
         $aluno->save();
 
-        return redirect()->route('aluno.index');
+        return redirect()->route('aluno.index')->with('success','Aluno "'.$request->nome.'" editado com sucesso!');;
 
     }
 

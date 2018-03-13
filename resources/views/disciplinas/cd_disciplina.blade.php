@@ -15,6 +15,36 @@
                     <input type="text" class="form-control" name="nome" placeholder="Nome da Disciplina">
                 </div>
             </div>
+            <div class="form-group font">
+              <label class="control-label col-sm-2 col-md-12">Instrumento (Escolha apenas um):</label>
+              <div class="col-sm-10 col-md-12">
+                @if($instrumentos->count() > 0)
+                  @foreach($instrumentos as $instrumento)
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="instrumento_id" value="{{ $instrumento->id }}">
+                        {{ $instrumento->nome }}
+                      </label>
+                    </div>
+                  @endforeach
+                @endif
+              </div>
+            </div>
+            <div class="form-group font">
+              <label class="control-label col-sm-2 col-md-12">Professor (Escolha apenas um):</label>
+              <div class="col-sm-10 col-md-12">
+                @if($professores->count() > 0)
+                  @foreach($professores as $professor)
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="professor_id" value="{{ $professor->id }}">
+                        {{ $professor->nome }}
+                      </label>
+                    </div>
+                  @endforeach
+                @endif
+              </div>
+            </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-primary" name="envio">Cadastrar</button>

@@ -28,35 +28,6 @@
               </div>
             </div>
             <div class="form-group font">
-              <label class="control-label col-sm-2 col-md-12" for="cd_resp1">Leciona (Escolha apenas um):</label>
-              <div class="col-sm-10 col-md-12">
-                <label>Instrumentos:</label>
-                @if($instrumentos->count() > 0)
-                  @foreach($instrumentos as $instrumento)
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="leciona" value="{{ $instrumento->nome }}" checked>
-                        {{ $instrumento->nome }}
-                      </label>
-                    </div>
-                  @endforeach
-                @endif
-                <label>Outros:</label>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="leciona" value="Musicalização" checked>
-                    Musicalização
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="leciona" value="Coral" checked>
-                    Coral
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group font">
               <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-primary" name="envio">Cadastrar</button>
               </div>

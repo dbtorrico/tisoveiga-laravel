@@ -8,4 +8,5 @@ class Instrumento extends Model
 {
     //
     protected $fillable = ['nome'];
+
 }

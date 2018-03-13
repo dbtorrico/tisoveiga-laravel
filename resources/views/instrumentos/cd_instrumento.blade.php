@@ -1,10 +1,11 @@
 @extends('layouts.app')
 @section('conteudo')
+@include('includes.errors')
+
   <section class="main">
             <div class="container center">
               <div class="container tittle">
-                  <a href="./"><i class="fa fa-3x fa-arrow-left" aria-hidden="true"></i></a>
-                  <h1>Instrumento</h1>
+                  <h3>Instrumento</h3>
               </div>
               <form class="form-horizontal font" method="POST" action="{{ route('instrumento.store')}}">
                 {{csrf_field()}}
@@ -16,8 +17,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" name="envio" class="btn btn-default">Cadastrar</button>
-                    <button type="submit" class="btn btn-default"><a href="./">Cancelar</button></a>
+                    <button type="submit" name="envio" class="btn btn-primary">Cadastrar</button>
                   </div>
                 </div>
               </form>

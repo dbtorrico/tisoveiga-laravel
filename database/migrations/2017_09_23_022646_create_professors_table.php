@@ -18,7 +18,6 @@ class CreateProfessorsTable extends Migration
             $table->string('nome');
             $table->string('email');
             $table->string('telefone');
-            $table->string('leciona');
             $table->timestamps();
         });
     }
